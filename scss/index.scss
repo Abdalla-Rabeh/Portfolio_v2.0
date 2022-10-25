@@ -1,0 +1,108 @@
+$MainColor: #2196f3;
+$Color: #fff;
+nav {
+    background-image: url("/img/B1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .navbar-toggler {
+        border: none;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    .navbar-collapse{
+        text-align: center;
+    }
+    .v-input--switch__thumb {
+        color: $MainColor !important;
+    }
+    .navbar-nav .nav-link.active {
+        font-weight: bold;
+        color: $Color !important;
+    }
+    .theme--light.v-input--switch .v-input--switch__track {
+        color: #f1f1f1 !important;
+    }
+    a {
+        color: $Color !important;
+    }
+    .v-input--selection-controls.v-input {
+        margin-left: 20px;
+    }
+}
+.v-row {
+    padding: 60px;
+}
+.row {
+    padding: 80px;
+}
+.card-header {
+    display: grid;
+    justify-items: center;
+}
+.v-card {
+    box-shadow: none !important;
+    text-align: center;
+    background-color: transparent !important;
+    .v-card__title {
+        font-size: 25px;
+        line-height: 2;
+        font-weight: bold;
+    }
+    .v-card__subtitle {
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: 600;
+        color: #000;
+    }
+    .v-card__text{
+        font-size: 15px;
+        line-height: 2;
+
+    }
+    .v-card.v-sheet.theme--dark , .theme--dark.v-card{
+        box-shadow: none !important;
+        background-color: transparent !important;
+    }
+    img{
+        position: relative;
+        margin: 50px auto;
+        animation: all-top 2s  infinite;
+        transition: all 1s ease-in-out ;
+    }
+    @keyframes all-top {
+        0%{
+            top: 0px;
+            transform: rotateX(300deg);
+        }
+        50%{
+            top: -30px;
+            
+        }
+       
+        100%{
+            top:0;
+            transform: rotateX(300deg);
+
+        }
+    }
+}
+
+@media (min-width :300px) and (max-width :500px) {
+    .v-card__title {
+        font-size: 12px !important;
+        line-height: 2;
+        font-weight: bold;
+    }
+    .v-card__subtitle {
+        font-size: 12px !important;
+        line-height: 1.2;
+        font-weight: 600;
+        color: #000;
+    }
+    .v-card__text{
+        font-size: 12px !important;
+        line-height: 2;
+    }
+}
+
