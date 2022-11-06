@@ -15,19 +15,19 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/img/1.jpeg'},
-      {rel:'stylesheet', href:'/css/all.min.css'},
-      {rel:'stylesheet', href:'/css/bootstrap.min.css'}
+      { rel: 'icon', type: 'image/x-icon', href: 'img/1.jpeg'},
+      {rel:'stylesheet', href:'css/all.min.css'},
+      {rel:'stylesheet', href:'css/bootstrap.min.css'}
     ],
     script: [
-      { src:'/js/all.min.js', type:'text/javascript' },
-      { src:'/js/bootstrap.bundle.min.js', type:'text/javascript' }
+      { src:'js/all.min.js', type:'text/javascript' },
+      { src:'js/bootstrap.bundle.min.js', type:'text/javascript' }
     ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    
+    'boxicons/css/boxicons.min.css'
   ],
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -76,11 +76,22 @@ export default {
         secondary: colors.red.lighten4, 
         accent: colors.indigo.base,
         grey: colors.grey.darken1
+      },
+      options: {
+        customProperties: true,
+        variations: false,
       }
     }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  server:{
+    port: process.env.PORT || 3000
+  },
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   }
+  
 }

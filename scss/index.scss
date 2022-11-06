@@ -7,6 +7,9 @@ nav {
     .navbar-toggler {
         border: none;
     }
+    a.navbar-brand{
+        font-weight: bold;
+    }
     .navbar-toggler:focus {
         box-shadow: none;
     }
@@ -33,12 +36,15 @@ nav {
 .v-row {
     padding: 60px;
 }
-.row {
-    padding: 80px;
-}
+
+
 .card-header {
     display: grid;
     justify-items: center;
+    padding-top: 80px;
+}
+.img{
+    padding-top:100px !important;
 }
 .v-card {
     box-shadow: none !important;
@@ -60,31 +66,17 @@ nav {
         line-height: 2;
 
     }
+    .v-card__actions button{
+        border-radius: 50px;
+        background-color: #2196f3 !important;
+        a{
+            color: #fff !important;
+            font-weight: bold;
+        }
+    }
     .v-card.v-sheet.theme--dark , .theme--dark.v-card{
         box-shadow: none !important;
         background-color: transparent !important;
-    }
-    img{
-        position: relative;
-        margin: 50px auto;
-        animation: all-top 2s  infinite;
-        transition: all 1s ease-in-out ;
-    }
-    @keyframes all-top {
-        0%{
-            top: 0px;
-            transform: rotateX(300deg);
-        }
-        50%{
-            top: -30px;
-            
-        }
-       
-        100%{
-            top:0;
-            transform: rotateX(300deg);
-
-        }
     }
 }
 
@@ -105,4 +97,24 @@ nav {
         line-height: 2;
     }
 }
-
+.full{
+    background-color: #2196f3;
+    margin: 0;
+    height: 250px;
+    padding: 0;
+    .full-box{
+        color: #fff;
+        text-align: center;
+        height: 200px;
+        display: grid;
+        place-items: center;
+        button{
+            margin: 10px;
+            background-color: #2196f3 !important;
+            a{
+                text-decoration: none;
+                color: #fff !important;
+            }
+        }
+    }
+}
