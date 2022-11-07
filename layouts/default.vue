@@ -86,9 +86,6 @@ export default {
 </script>
 <style lang="scss">
 nav {
-  background-image: url("/img/B1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   .navbar-toggler {
     border: none;
   }
