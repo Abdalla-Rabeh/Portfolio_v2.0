@@ -120,7 +120,7 @@ nav button svg {
   font-size: 30px;
 }
 footer {
-  background-image: url("img/B1.jpg");
+  background-image: url("/img/B1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff !important;
