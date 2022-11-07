@@ -173,19 +173,19 @@ export default {
       titleTemplate: "Abdallah Rabeh | Porfolio",
       overlay: false,
       Alls: [
-        { img: "/img/1.png", link: "https://abdalla-rabeh.github.io/Admin-Dashboard-test/",Review: "Review"},
-        { img: "/img/6.png", link: "https://first-herbal-eg.online/",Review:"Review"},
-        { img: "/img/2.png", link: "https://abdalla-rabeh.github.io/L10N-House/",  Review: "Review"},
-        { img: "/img/3.png", link: "https://github.com/Abdalla-Rabeh/Task_vue",  Review: "Review"},
-        { img: "/img/4.png", link: "/",  Review: "Review"},
+        { img: "img/1.png", link: "https://abdalla-rabeh.github.io/Admin-Dashboard-test/",Review: "Review"},
+        { img: "img/6.png", link: "https://first-herbal-eg.online/",Review:"Review"},
+        { img: "img/2.png", link: "https://abdalla-rabeh.github.io/L10N-House/",  Review: "Review"},
+        { img: "img/3.png", link: "https://github.com/Abdalla-Rabeh/Task_vue",  Review: "Review"},
+        { img: "img/4.png", link: "/",  Review: "Review"},
       ],
       JavaScripts: [
-        { img: "/img/1.png", link: "https://abdalla-rabeh.github.io/Admin-Dashboard-test/",  Review: "Review"},  
-        { img: "/img/2.png", link: "https://abdalla-rabeh.github.io/L10N-House/",  Review: "Review"}  
+        { img: "img/1.png", link: "https://abdalla-rabeh.github.io/Admin-Dashboard-test/",  Review: "Review"},  
+        { img: "img/2.png", link: "https://abdalla-rabeh.github.io/L10N-House/",  Review: "Review"}  
       ],
       Vues: [
-        { img: "/img/3.png", link: "https://github.com/Abdalla-Rabeh/Task_vue",  Review: "Review"},   
-        { img: "/img/4.png", link: "/",  Review: "Review"},   
+        { img: "img/3.png", link: "https://github.com/Abdalla-Rabeh/Task_vue",  Review: "Review"},   
+        { img: "img/4.png", link: "/",  Review: "Review"},   
       ],
     
       activeTab: "1",
