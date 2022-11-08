@@ -217,11 +217,12 @@ ul {
   justify-content: space-evenly;
 }
 .tabs-choose {
-  margin-bottom: 0;
+  margin-bottom: 20px;
   li {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #fff;
+    background-color: #2196f3;
+    color: #fff;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.5s;

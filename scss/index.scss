@@ -1,9 +1,10 @@
 $MainColor: #2196f3;
 $Color: #fff;
-nav {
-    background-image: url("/img/B1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+nav{
+    // background-image: url("/img/B1.jpg");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    background-color: $MainColor;
     .navbar-toggler {
         border: none;
     }
