@@ -5,7 +5,7 @@
         <div class="row align-items-center">
           <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="box">
-              <img :src="img" alt="" class="img-fluid" />
+              <img :src="img"  class="img-fluid" alt="Abdallah Rabeh"/>
               <h2>Abdallah Rabeh</h2>
               <p>Front End Developer Vue.js & Nuxt.js</p>
             </div>

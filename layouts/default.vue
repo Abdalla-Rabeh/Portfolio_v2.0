@@ -68,7 +68,6 @@
 export default {
   data() {
     return {
-      close: false,
       Dark: false,
       Links: [
         { title: "Home", router: "/" },

@@ -52,10 +52,10 @@ export default {
   // ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  // axios: {
-  //   // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-  //   baseURL: '/',
-  // },
+  axios: {
+    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
+    baseURL: '',
+  },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
@@ -91,10 +91,10 @@ export default {
   build: {
   },
   server:{
-    port: process.env.PORT || 3000
+    port: process.env.PORT || 4000
   },
   env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+    baseUrl: process.env.BASE_URL || 'http://localhost:4000'
   }
   
 }

@@ -22,7 +22,7 @@
             </v-card>
           </div>
           <div class="col-lg-6 col-md-12 col-sm-12">
-            <img :src="img" class="img-fluid img" />
+            <img :src="img" class="img-fluid img" alt="Abdallah Rabeh img website" />
           </div>
         </v-row>
       </v-container>
