@@ -25,7 +25,6 @@ export default {
       { src:'js/all.min.js', type:'text/javascript' },
       { src:'js/bootstrap.bundle.min.js', type:'text/javascript' },
       { src: 'js/chat.js', type:'text/javascript'}
-
     ],
 
     
