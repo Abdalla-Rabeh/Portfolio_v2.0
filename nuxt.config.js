@@ -13,7 +13,8 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+      
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'img/1.jpeg'},
@@ -22,8 +23,12 @@ export default {
     ],
     script: [
       { src:'js/all.min.js', type:'text/javascript' },
-      { src:'js/bootstrap.bundle.min.js', type:'text/javascript' }
+      { src:'js/bootstrap.bundle.min.js', type:'text/javascript' },
+      { src: 'js/chat.js', type:'text/javascript'}
+
     ],
+
+    
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -36,9 +41,9 @@ export default {
   
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
-  router:{
-    base: '/Portfolio_v2.0/'
-  },
+  // router:{
+  //   base: '/Portfolio_v2.0/'
+  // },
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
@@ -52,10 +57,10 @@ export default {
   // ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {
-    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '',
-  },
+  // axios: {
+  //   // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
+  //   baseURL: '',
+  // },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
@@ -91,10 +96,10 @@ export default {
   build: {
   },
   server:{
-    port: process.env.PORT || 4000
+    port: process.env.PORT || 3000
   },
   env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:4000'
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   }
   
 }

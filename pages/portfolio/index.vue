@@ -3,7 +3,13 @@
     <v-app>
       <v-container>
         <v-row class="align-items-center">
-          <v-col cols="12" lg="12" md="12" sm="12" class="d-flex justify-content-center">
+          <v-col
+            cols="12"
+            lg="12"
+            md="12"
+            sm="12"
+            class="d-flex justify-content-center"
+          >
             <div class="title text-center">
               <h3>{{ titleTemplate }}</h3>
               <p>
@@ -15,21 +21,37 @@
           <v-col>
             <div class="custom-tab">
               <ul class="tabs-choose">
-                <li @click="activeTab = '1'" :class="[activeTab === '1' ? 'active' : '']">
+                <li
+                  @click="activeTab = '1'"
+                  :class="[activeTab === '1' ? 'active' : '']"
+                >
                   All
                 </li>
-                <li @click="activeTab = '2'" :class="[activeTab === '2' ? 'active' : '']">
+                <li
+                  @click="activeTab = '2'"
+                  :class="[activeTab === '2' ? 'active' : '']"
+                >
                   JavaScript
                 </li>
-                <li @click="activeTab = '3'" :class="[activeTab === '3' ? 'active' : '']">
+                <li
+                  @click="activeTab = '3'"
+                  :class="[activeTab === '3' ? 'active' : '']"
+                >
                   Vue.js
                 </li>
               </ul>
               <div class="tabs-content">
                 <div class="content-one" v-if="activeTab === '1'">
                   <v-row>
-                    <v-col cols="12" lg="4" md="6" sm="12" v-for="(All, i) in Alls" :key="i"
-                      class="d-flex justify-content-center">
+                    <v-col
+                      cols="12"
+                      lg="4"
+                      md="6"
+                      sm="12"
+                      v-for="(All, i) in Alls"
+                      :key="i"
+                      class="d-flex justify-content-center"
+                    >
                       <v-card>
                         <v-hover>
                           <template v-slot:default="{ hover }">
@@ -37,7 +59,11 @@
                               <v-img :src="All.img" :alt="All.alt"></v-img>
 
                               <v-fade-transition>
-                                <v-overlay v-if="hover" absolute color="#036358">
+                                <v-overlay
+                                  v-if="hover"
+                                  absolute
+                                  color="#036358"
+                                >
                                   <ul>
                                     <li>
                                       <a :href="All.link">{{ All.Review }}</a>
@@ -54,19 +80,29 @@
                 </div>
                 <div class="content-two" v-if="activeTab === '2'">
                   <v-row>
-                    <v-col cols="12" lg="4" md="6" sm="12" v-for="(JavaScript, i) in JavaScripts" :key="i"
-                      class="d-flex justify-content-center">
+                    <v-col
+                      cols="12"
+                      lg="4"
+                      md="6"
+                      sm="12"
+                      v-for="(JavaScript, i) in JavaScripts"
+                      :key="i"
+                      class="d-flex justify-content-center"
+                    >
                       <v-hover>
                         <template v-slot:default="{ hover }">
                           <v-card>
-                            <v-img :src="JavaScript.img" :alt="JavaScript.alt"></v-img>
+                            <v-img
+                              :src="JavaScript.img"
+                              :alt="JavaScript.alt"
+                            ></v-img>
 
                             <v-fade-transition>
                               <v-overlay v-if="hover" absolute color="#036358">
                                 <ul>
                                   <li>
                                     <a :href="JavaScript.link">{{
-                                        JavaScript.Review
+                                      JavaScript.Review
                                     }}</a>
                                   </li>
                                 </ul>
@@ -80,8 +116,15 @@
                 </div>
                 <div class="content-three" v-if="activeTab === '3'">
                   <v-row>
-                    <v-col cols="12" lg="4" md="6" sm="12" v-for="(Vue, i) in Vues" :key="i"
-                      class="d-flex justify-content-center">
+                    <v-col
+                      cols="12"
+                      lg="4"
+                      md="6"
+                      sm="12"
+                      v-for="(Vue, i) in Vues"
+                      :key="i"
+                      class="d-flex justify-content-center"
+                    >
                       <v-card>
                         <v-hover>
                           <template v-slot:default="{ hover }">
@@ -89,7 +132,11 @@
                               <v-img :src="Vue.img" :alt="Vue.alt"></v-img>
 
                               <v-fade-transition>
-                                <v-overlay v-if="hover" absolute color="#036358">
+                                <v-overlay
+                                  v-if="hover"
+                                  absolute
+                                  color="#036358"
+                                >
                                   <ul>
                                     <li>
                                       <a :href="Vue.link">{{ Vue.Review }}</a>

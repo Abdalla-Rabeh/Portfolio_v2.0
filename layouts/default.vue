@@ -76,6 +76,7 @@ export default {
       ],
     };
   },
+  
   methods: {
     ThmemDartMode() {
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
